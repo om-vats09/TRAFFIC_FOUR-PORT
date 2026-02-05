@@ -1,0 +1,23 @@
+xrun: 25.03-s001: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun	25.03-s001: Started on Feb 05, 2026 at 14:40:24 EST
+xrun
+	-Q
+	-unbuffered
+	-timescale 1ns/1ns
+	-sysv
+	-access +rw
+	-uvmnocdnsextra
+	-uvmhome /xcelium25.03/tools//methodology/UVM/CDNS-IEEE/sv
+	/xcelium25.03/tools//methodology/UVM/CDNS-IEEE/sv/src/uvm_macros.svh
+	design.sv
+	testbench.sv
+	Top level design units:
+		tb_traffic
+Loading snapshot worklib.tb_traffic:sv .................... Done
+xcelium> source /xcelium25.03/tools/xcelium/files/xmsimrc
+xcelium> source /xcelium25.03/tools//methodology/UVM/CDNS-IEEE/sv/files/tcl/uvm_sim.tcl
+xcelium> run
+Simulation complete via $finish(1) at time 520 NS + 0
+./testbench.sv:35         #500; $finish;
+xcelium> exit
+TOOL:	xrun	25.03-s001: Exiting on Feb 05, 2026 at 14:40:26 EST  (total: 00:00:02)
